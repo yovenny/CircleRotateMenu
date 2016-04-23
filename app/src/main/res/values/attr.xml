@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleRotateView">
+        <attr name="menu_width" format="dimension" />
+        <attr name="menu_handle_start_degree" format="float" />
+        <attr name="circle_handle_start_degree" format="float" />
+        <attr name="menu_interval_degree" format="float" />
+        <attr name="max_rotate_degree" format="float" />
+        <attr name="min_rotate_degree" format="float" />
+        <attr name="circle_bg" format="reference" />
+    </declare-styleable>
+</resources>
