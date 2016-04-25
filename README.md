@@ -1,19 +1,25 @@
-//关于本控件的优化改进如下:
+##CircleRotateMenuView
+***
 
-记得这个控件是我刚开始从事android搞的效果,效果虽然是实现了,但代码的质量是为了实现效果而实现的比较渣,不易拓展.
-现对此控件进行改进优化和拓展,并整理实现思路.
+  Android 圆形菜单集，支持收起和展开，旋转。
 
-功能如下:
-        1)拖动旋转柄可以旋转,支持最大最小旋转角度.
-        2)点击菜单柄展开和收取菜单集.
-        3) 动态分配菜单集位置,菜单集个数任意,起始菜单柄位置自定义,旋转柄起始位置自定义
-        
-userage:
+##功能点
+
+    - 拖动旋转柄可以旋转,支持最大最小旋转角度.
+    - 点击菜单柄展开和收取菜单集.
+    - 动态分配菜单集位置,菜单集个数任意,起始菜单柄位置自定义,旋转柄起始位置自定义
+
+##Issue
+***
+    *运用简单的内部添加控件,控制动画,控制touchEvent实现.辅助控件较多可能存在性能的问题.
+    *由于rotateAnimation.RELATIVE_TO_PARENT不能使菜单项围绕中心点旋转,现使用折衷的方式(rotateAnimation.RELATIVE_TO_SELF在菜单项套一层view,但相应的代码会增多)
+    *暂未调查其他相似控件的实现原理，有更好的实现方式将会引入优化。
+
+##Usage
+    
+###    ＊incode＊
       
-      ```java
-      
-      in code:
-      
+      `
       private View.OnClickListener[] sClickArray = new View.OnClickListener[]{
                   new View.OnClickListener() {
                       @Override
@@ -106,8 +112,10 @@ userage:
                           }
                       });
                       
-       in xml:
-       
+    `
+                      
+###  ＊in xml＊
+      ` 
         <com.yovenny.circlerotatemenu.CircleRotateView
                android:id="@+id/cv_main_circle"
                android:layout_width="300dp"
@@ -121,11 +129,5 @@ userage:
                app:min_rotate_degree="-180"
                app:circle_bg="@drawable/main_circle"/>
        
-      ```
-
-issue:
-//TODO 运用简单的内部添加控件,控制动画,控制touchEvent实现.辅助控件较多可能存在性能的问题.
-//TODO 由于rotateAnimation.RELATIVE_TO_PARENT不能使菜单项围绕中心点旋转,现使用折衷的方式(rotateAnimation.RELATIVE_TO_SELF在菜单项套一层view,但相应的代码会增多)
-
-
+      `
 
