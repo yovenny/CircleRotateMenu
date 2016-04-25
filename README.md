@@ -2,7 +2,7 @@
   Android 圆形菜单集，支持收起和展开，旋转。
   
 ## Screenshots
-  ![](screenshots/S60425-161409.jpg) ![](screenshots/S60425-161422.jpg)
+  ![](screenshots/S60425-161409.png) ![](screenshots/S60425-161422.png)
 
 ##功能点
 
