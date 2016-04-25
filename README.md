@@ -12,7 +12,8 @@
 ##Issue
 ***
     *运用简单的内部添加控件,控制动画,控制touchEvent实现.辅助控件较多可能存在性能的问题.
-    *由于rotateAnimation.RELATIVE_TO_PARENT不能使菜单项围绕中心点旋转,现使用折衷的方式(rotateAnimation.RELATIVE_TO_SELF在菜单项套一层view,但相应的代码会增多)
+    *由于rotateAnimation.RELATIVE_TO_PARENT不能使菜单项围绕中心点旋转,
+    现使用折衷的方式(rotateAnimation.RELATIVE_TO_SELF在菜单项套一层view,但相应的代码会增多)
     *暂未调查其他相似控件的实现原理，有更好的实现方式将会引入优化。
 
 ##Usage
