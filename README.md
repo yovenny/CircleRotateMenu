@@ -4,23 +4,23 @@
 ## Screenshots
   ![](screenshots/S60425-161409.png) ![](screenshots/S60425-161422.png)
 
-##功能点
+##Feature
 
-    - 拖动旋转柄可以旋转,支持最大最小旋转角度.
-    - 点击菜单柄展开和收取菜单集.
-    - 动态分配菜单集位置,菜单集个数任意,起始菜单柄位置自定义,旋转柄起始位置自定义
+- 拖动旋转柄可以旋转,支持最大最小旋转角度.
+- 点击菜单柄展开和收取菜单集.
+- 动态分配菜单集位置,菜单集个数任意,起始菜单柄位置自定义,旋转柄起始位置自定义
 
 ##Issue
-    *运用简单的内部添加控件,控制动画,控制touchEvent实现.辅助控件较多可能存在性能的问题.
-    *由于rotateAnimation.RELATIVE_TO_PARENT不能使菜单项围绕中心点旋转,
-         现使用折衷的方式(rotateAnimation.RELATIVE_TO_SELF在菜单项套一层view,但相应的代码会增多)
-    *暂未调查其他相似控件的实现原理，有更好的实现方式将会引入优化。
+- 运用简单的内部添加控件,控制动画,控制touchEvent实现.辅助控件较多可能存在性能的问题.
+- 由于rotateAnimation.RELATIVE_TO_PARENT不能使菜单项围绕中心点旋转,
+  现使用折衷的方式(rotateAnimation.RELATIVE_TO_SELF在菜单项套一层view,但相应的代码会增多)
+- 暂未调查其他相似控件的实现原理，有更好的实现方式将会引入优化。
 
 ##Usage
     
-###    ＊incode＊
+###＊incode＊
       
-      ```java
+```java
       private View.OnClickListener[] sClickArray = new View.OnClickListener[]{
                   new View.OnClickListener() {
                       @Override
@@ -113,10 +113,10 @@
                           }
                       });
                       
-    ```
+```
                       
 ###  ＊in xml＊
-      ```xml
+```xml
         <com.yovenny.circlerotatemenu.CircleRotateView
                android:id="@+id/cv_main_circle"
                android:layout_width="300dp"
@@ -130,5 +130,5 @@
                app:min_rotate_degree="-180"
                app:circle_bg="@drawable/main_circle"/>
        
-      ```
+```
 
