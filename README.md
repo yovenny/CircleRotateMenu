@@ -16,6 +16,12 @@
   现使用折衷的方式(rotateAnimation.RELATIVE_TO_SELF在菜单项套一层view,但相应的代码会增多)
 - 暂未调查其他相似控件的实现原理，有更好的实现方式将会引入优化。
 
+## Gradle
+
+```groovy
+compile 'com.yovenny.CircleRotateMenu:library:1.0.0'
+```
+
 ##Usage
     
 ###＊incode＊

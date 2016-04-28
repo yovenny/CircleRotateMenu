@@ -1,4 +1,4 @@
-package com.yovenny.circlerotatemenuview;
+package com.yovenny.library;
 
 import android.content.Context;
 import android.content.res.TypedArray;

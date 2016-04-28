@@ -10,7 +10,7 @@
     tools:showIn="@layout/app_bar_main">
 
 
-    <com.yovenny.circlerotatemenuview.CircleRotateView
+    <com.yovenny.library.CircleRotateView
         android:id="@+id/cv_main_circle"
         android:layout_width="300dp"
         android:layout_height="300dp"
